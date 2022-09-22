@@ -14,13 +14,13 @@ struct CountsByUsage countBatteriesByUsage(const int* cycles, int nBatteries) {
   {
       //This condition checks if the charge cycle for a battery is less than 410
       if(cycles[i]<410)
-        counts.lowCount=counts.lowCount+1; //Increment the count of the low charge battery by 1
-     //This condition checks if the charge cycle for a battery is between than 410 and 909
+        counts.lowCount=counts.lowCount+1; //Increment the count of the low charge batteries by 1
+     //This condition checks if the charge cycle for a battery is between  410 and 909
       else if(cycles[i]>=410 && cycles[i]<=909)
-        counts.mediumCount=counts.mediumCount+1; //Increment the count of the medium charge battery by 1
+        counts.mediumCount=counts.mediumCount+1; //Increment the count of the medium charge batteries by 1
     //This condition checks if the charge cycle for a battery is greater than or equal to 910
       else
-        counts.highCount=counts.highCount+1; //Increment the count of the high charge battery by 1
+        counts.highCount=counts.highCount+1; //Increment the count of the high charge batteries by 1
   }
   return counts;
 }
